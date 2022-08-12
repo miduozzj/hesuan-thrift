@@ -1,0 +1,36 @@
+// 命名空间
+namespace js wjw
+namespace java wjw
+
+struct WjwParamType {  
+ 1: double latitude,  
+ 2: double longitude, 
+}
+
+struct WjwDataType {
+1: string address, // "广东省深圳市南山区香山西街45号"
+2: string areaName, // "南山区"
+3: string code, // "B04221306"
+4: string communityName, // "新塘社区"
+5: i64 createTime, // 1660061105000
+6: double distance, //  1500.8716354803787
+7: i64 id, //  93894
+8: i64 idCommunity1, // 37385
+9: string latitude, // "22.54896958489137"
+10: string longitude, // "113.9671474455503"
+11: string name, //  "侨城馨苑"
+12: string phone, //  "86326754"
+13: i8 serverAllday, //  0
+14: i8 serverNight, // 1
+15: string serverPeople, //  "普通人群（绿码）"
+16: i8 serverPeopleInt, // 1
+17: string serverTime, //  "09:30-12:00,14:00-17:00,18:00-22:00"
+18: i8 status, //  2
+19: string streetName, //  "沙河街道"
+20: i64 updateTime, //  1660200606000
+21: i8 workerNumber, //  2
+}
+
+service WjwService{  
+ list<WjwDataType> queryWjwData(1: WjwParamType param),  
+}  

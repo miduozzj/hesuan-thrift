@@ -1,0 +1,18 @@
+{
+  "name": "hesuan-thrift",
+  "version": "1.0.0",
+  "description": "thrift服务",
+  "main": "app.js",
+  "scripts": {
+    "server": "node service.js",
+    "client": "node client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zzj",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "qs": "^6.11.0",
+    "thrift": "^0.16.0"
+  }
+}
